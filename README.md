@@ -26,9 +26,9 @@ A Python bot that monitors Instagram stories for specified accounts and sends ne
 
 ## Configuration
 1. **Environment Variables:**
-   - Copy `.env.example` to `.env`:
+   - Copy `env.example` to `.env`:
      ```bash
-     cp .env.example .env
+     cp env.example .env
      ```
    - Edit `.env` and fill in your actual `TELEGRAM_BOT_TOKEN` and `TELEGRAM_USER_ID`.
 2. **Instagram Accounts:**
@@ -43,9 +43,6 @@ python bot.py
 - The bot will check for new stories every 10 minutes.
 - When a new story is found, it sends a message to the configured Telegram user.
 - Approving a story triggers the custom processing function in `bot.py`.
-
-## Customization
-- Edit the `process_approved_update` function in `bot.py` to define what happens when a story is approved.
 
 ## Logging
 - All actions and errors are logged to `log.txt`.
